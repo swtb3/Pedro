@@ -1,0 +1,24 @@
+[project]
+name = "pedro"
+version = "0.1.0"
+description = "PEDRO: Pre/Post Embedding Dimension Reduction Observer – Visualize how dimensionality reduction distorts embedding neighborhoods."
+authors = [{ name = "swtb-datascience"}]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "umap-learn",
+    "pacmap",
+    "hnswlib>=0.8.0",
+    "seaborn>=0.12.2",
+    "pandas>=2.2.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "black", "build"]
+
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
